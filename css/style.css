@@ -10,6 +10,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background-color: #f4f8fb;
 }
 
 header{
@@ -18,6 +19,7 @@ header{
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
+    background-color: white;
 }
 
 .header img {
@@ -64,6 +66,7 @@ header{
     border: 1px solid #ccc;
     padding: 20px;
     padding-bottom: 80px;
+    background-color: white;
 }
 
 .card1 ul{
@@ -112,6 +115,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .btn_doar{
@@ -131,7 +135,6 @@ header{
 
 .btn_redes{
     padding: 10px;
-    background-color: pink;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -162,3 +165,34 @@ header{
     background-color: #55acee;
 }
 
+
+
+/*******************************************MEDIA QUERIES*******************************************/
+@media (max-width:1021px){
+    .cards_container{
+        flex-direction:column-reverse;
+    }
+
+    .btn_doar{
+        background-color: #ef6446;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        width: 96%;
+        padding-inline: 150px;
+        padding-block: 10px;
+        font-weight: 600;
+    }
+
+    .card1_container{
+        width: 98%;   
+        margin: auto;
+    }
+
+    .card2{
+        width: 98%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+}
