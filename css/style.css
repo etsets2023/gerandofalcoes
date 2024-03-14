@@ -147,7 +147,8 @@ main{
 
     .nav-item{
         align-self: start !important;
-        margin-left: -150px;
+        margin-left: -150px !important;
+        margin-top: 30px;
     }
 
     .container_main{
