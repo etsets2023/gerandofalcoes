@@ -193,6 +193,10 @@ iframe{
         align-self: center;
     }
 
+    .secao_video{
+        padding: 20px 10px;
+    }
+
     iframe{
         width: 90%;
     }
@@ -204,7 +208,7 @@ iframe{
 @media (max-width:550px){
     .h1_container_main{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     
