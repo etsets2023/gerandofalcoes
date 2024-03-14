@@ -147,7 +147,7 @@ main{
         margin-left: 0;
         margin: 0 auto;
         gap: 80px; 
-        padding-top: 100px;
+        padding-top: 50px;
       
     }
 
@@ -179,7 +179,13 @@ main{
 @media (max-width:550px){
     .h1_container_main{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
+    .nav-item{
+        align-self: start !important;
+        margin-left: -150px;
+    }
+
 }
 
