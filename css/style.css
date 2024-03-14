@@ -98,7 +98,7 @@ main{
 /**************ANIMAçÃO****************/
 [data-anime] {
     opacity: 0;
-    transition: 1s;
+    transition: 2s;
 }
 
 [data-anime="down"] {
@@ -120,6 +120,19 @@ main{
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.secao_video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #212338;
+}
+
+iframe{
+    width: 60%;
+    height:350px;
 }
 
 
@@ -179,6 +192,11 @@ main{
     .btn_container_main{
         align-self: center;
     }
+
+    iframe{
+        width: 80%;
+    }
+    
     
 }
 
@@ -186,7 +204,7 @@ main{
 @media (max-width:550px){
     .h1_container_main{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     
