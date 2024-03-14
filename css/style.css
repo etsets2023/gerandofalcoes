@@ -76,7 +76,8 @@ main{
 
 .p_container_main{
     color: white;
-    font-size: 1.5rem;  
+    font-size: 1.5rem; 
+    margin-bottom: 40px; 
 }
 
 .btn_container_main{
@@ -143,6 +144,12 @@ main{
 
 
 @media (max-width:612px){
+
+    .nav-item{
+        align-self: start !important;
+        margin-left: -150px;
+    }
+
     .container_main{
         margin-left: 0;
         margin: 0 auto;
@@ -166,7 +173,6 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
     
     .btn_container_main{
@@ -182,10 +188,9 @@ main{
         font-size: 1.5rem;
     }
 
-    .nav-item{
-        align-self: start !important;
-        margin-left: -150px;
-    }
+    
+
+  
 
 }
 
