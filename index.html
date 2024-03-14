@@ -15,52 +15,195 @@
 </head>
 <body>
     <!-----------------------------------------NAV BAR----------------------------------------------->
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom header">   
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="https://cdn.filestackcontent.com/edQMBY9SzSzv5PSQBely" alt="">
-            </a>
-            <div class="nav-bar-cta powered-by-donorbox">Powered by <a class="link_donorbox" href="#">Donorbox</a></div>   
-    </header>
+    <nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
+      <div class="container nav_container">
+        <img class="logo_gerando_falcoes" src="./img/img_logo_gerando_falcoes.avif" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list navbar-toggler-icon" style="color: white; font-size: 35px;"></i>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Início</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Institucional</a>
+              <ul class="dropdown-menu ul_institucional">
+                <li><a class="dropdown-item" href="#">Sobre nós</a></li>
+                <li><a class="dropdown-item" href="#">Atuação</a></li>
+                <li><a class="dropdown-item" href="#">Transparência</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projetos</a>
+              <ul class="dropdown-menu ul_institucional">
+                <li><a class="dropdown-item" href="#">Startup Social</a></li>
+                <li><a class="dropdown-item" href="#">Academia do Emprego</a></li>
+                <li><a class="dropdown-item" href="#">Alfabetização / Reforço</a></li>
+                <li><a class="dropdown-item" href="#">Cuidador de Idosos</a></li>
+                <li><a class="dropdown-item" href="#">Jovem Falcão</a></li>
+                <li><a class="dropdown-item" href="#">V.tal & Telemont</a></li>
+                <li><a class="dropdown-item" href="#">Muay Thai</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Como ajudar?</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">DOAR</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PT</a>
+              <ul class="dropdown-menu ul_pt">
+                <li><a class="dropdown-item" href="#">Português</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
     <!---------------------------------------FECHA NAV BAR------------------------------------------>
 
 
-    <main class="main">
-        <img src="./img/img_foto_principal.png" alt="">
-    </main>
 
-    <section class="cards">
-        <div class="cards_container">
-            <div class="card1_container">
-                <div class="card1">
-                    <ul>
-                        <li><a href="#">Details</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Mural dos Doadores</a></li>
-                    </ul>
-                    <p class="card_paragrafro"><b>"Você é a luz do mundo."</b>  Nossa missão é trazer mudanças reais e tangíveis para a vida daqueles que enfrentam desafios diários. Com sua generosidade, podemos <b>iluminar caminhos, oferecer apoio e transformar comunidades. </b> </p>
-                    <p class="card_frase">"Juntos, brilhamos: obrigado por ser a luz do mundo com a gente!"</p>          
+     <!-----------------------------------------MAIN----------------------------------------------->
+        <main class="py-5 main container-fluid ">
+            <div class="container container_main">
+              <h1 class="display-5 fw-bold text-white h1_main">Transformando comunidades, uma vida de cada vez.</h1>
+              <div class="container_main_paragrafo">
+                <h2 class="fs-5 mb-4 h2_main" >Faça parte do movimento. Junte-se ao Capoeira Social e faça a diferença na comunidade!</h2>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+                  <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn_main">Doe agora!</button>
                 </div>
-                <div class="card_redes">
-                    <p>Follow us on social media</p>
-                    <div class="redes">
-                        <a href="#"><i class="bi bi-facebook" style="color: white; font-size: 30px;"></i></a>
-                        <a href="#"><i class="bi bi-instagram" style="color: white; font-size: 30px;"></i></a>
-                        <a href="#"><i class="bi bi-linkedin" style="color: white; font-size: 30px;"></i></a>
-                    </div>
-                </div>
+              </div>
             </div>
+          </main>
+    <!-----------------------------------------FECHA MAIN------------------------------------------------->
 
-            <div class="card2">
-                <a class="btn_doar" href="#">Doar</a>
-                <p class="paragrafo_doar">Nos ajude divulgando nossa campanha!</p>
-                <div class="redes">
-                    <a class="btn_redes face" href="#"><i class="bi bi-facebook"></i><p>Facebook</p></a>
-                    <a class="btn_redes linkedin" href="#"><i class="bi bi-linkedin"></i><p>Linkedin</p></a>
-                    <a class="btn_redes twitter"href="#"><i class="bi bi-twitter"></i><p>Twitter</p></a>      
-                </div>
-            </div>
+
+      <!-----------------------------------------VIDEO--------------------------------------------------->
+      <section class="py-5 container-fluid secao_video " style="display: flex; justify-content: center;">
+        <iframe src="https://www.youtube.com/embed/dI9HoQ4rNaA?si=iT30YHCnAMnxoQWW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <!-----------------------------------------FECHA VIDEO----------------------------------------------->
+
+
+      <!-----------------------------------------DADOS--------------------------------------------------->
+      <section class="py-5 container-fluid secao_dados">
+        <div class="container container_secao_dados">
+          <div class="container_item_secao_dados">
+            <h2 class="secao_dados_h2">+DE 70</h2>
+            <p class="secao_dados_p">VOLUNTÁRIOS</p>
+          </div>
+          <div class="container_item_secao_dados">
+            <h2 class="secao_dados_h2">+ DE 10</h2>
+            <p class="secao_dados_p">EMPRESAS PARCEIRAS</p>
+            
+          </div>
+          <div class="container_item_secao_dados">
+            <h2 class="secao_dados_h2">+ DE 5 MIL</h2>
+            <p class="secao_dados_p">VIDAS IMPACTADAS</p>
+          </div>   
         </div>
-    </section>
+        <span class="secao_dados_span">... e é só o começo!</span>
+      </section>
+      <!-----------------------------------------FECHA DADOS----------------------------------------------->
+
+      <!-----------------------------------------INTEGRIDADE--------------------------------------------------->
+      <section class="py-5 container-fluid secao_integridade">
+        <div class="container container_secao_integridade">
+          <div class="container_item_secao_integridade">
+            <h2 class="secao_integridade_h2" style="text-align: center; margin-bottom: 70px;">Entendemos que a mudança real exige tempo, esforço e dedicação consistentes, e estamos comprometidos em investir tudo isso nas comunidades que servimos."</h2>
+            <p class="secao_integridade_p" style="text-align: justify; ">Compreendemos profundamente que a transformação genuína requer mais do que simples ações momentâneas. Estamos comprometidos em investir tempo, esforço e dedicação consistentes em cada comunidade a honra de servir. <br> <br> Acreditamos que é essa abordagem persistente que nos permite construir relacionamentos sólidos, entender as verdadeiras necessidades locais e, finalmente, alcançar resultados impactantes e duradouros. Nosso compromisso não é apenas oferecer ajuda temporária, mas sim trabalhar lado a lado com as comunidades, criando um futuro melhor para todos.”</p>
+          </div>
+          <div class="container_item_secao_integridade">
+            <img src="./img/img_secao_integridade.jpg" alt="">  
+          </div>
+            
+        </div>
+        
+      </section>
+      <!-----------------------------------------FECHA INTEGRIDADE----------------------------------------------->
+
+
+
+      <!-----------------------------------------OBJETIVOS--------------------------------------------------->
+      <section class="py-5 container-fluid secao_objetivos">
+          <div class="container1_objetivos">
+            <img class="img_container1_objetivos" src="./img/img_objetivos_sustentavel.avif" alt="">
+            <h3 class="h3_container1_objetivos">ODS são <b>metas estabelecidas pela ONU</b>  para guiar ações globais rumo a um futuro mais sustentável. Compreendendo diversas áreas, são um chamado para as ONGs atuarem em prol de um mundo melhor e mais justo.</h3>
+          </div>
+          <div class="container container2_objetivos">
+
+          
+            <div class="container_item_secao_objetivos">
+              <img  src="./img/img_objetivos_1.avif" alt="">
+              <div>
+                <b>Salmos 82:3</b>
+                <p class="p_container_item_secao_objetivos">"Fazei justiça ao pobre e ao órfão; justificai o aflito e o necessitado."</p>
+              </div>
+            </div>
+            <div class="container_item_secao_objetivos">
+              <img src="./img/img_objetivos_2.avif" alt="">
+              <div>
+                <b>Salmos 82:3</b>
+                <p class="p_container_item_secao_objetivos">"Fazei justiça ao pobre e ao órfão; justificai o aflito e o necessitado."</p>
+               </div>
+            </div>
+            <div class="container_item_secao_objetivos">
+              <img src="./img/img_objetivos_3.avif" alt="">
+              <div>
+                <b>Salmos 82:3</b>
+                <p class="p_container_item_secao_objetivos">"Fazei justiça ao pobre e ao órfão; justificai o aflito e o necessitado."</p>
+              </div>
+            </div>
+            <div class="container_item_secao_objetivos">
+              <img src="./img/img_objetivos_4.avif" alt="">
+              <div>
+                <b>Salmos 82:3</b>
+                <p class="p_container_item_secao_objetivos">"Fazei justiça ao pobre e ao órfão; justificai o aflito e o necessitado."</p>
+              </div>
+            </div>
+
+            <div class="container container3_objetivos mt-5">
+              <div class="container_item_secao_objetivos">
+                <img src="./img/img_objetivos_8.avif" alt="">
+                <div>
+                  <b>1 Tessalonicenses 4:11</b>
+                  <p class="p_container_item_secao_objetivos">"Esforcem-se para ter uma vida tranquila, cuidar dos seus próprios negócios e trabalhar com as próprias mãos.”</p>
+                </div>
+              </div>
+              <div class="container_item_secao_objetivos">
+                <img src="./img/img_objetivos_10.avif" alt="">
+                <div>
+                  <b>Isaías 1:17</b>
+                  <p class="p_container_item_secao_objetivos" style="font-size: 14.5px;">"Aprendam a fazer o bem! Busquem a justiça, acabem com a opressão. Lutem pelos direitos do órfão, defendam a causa da viúva."</p>
+                </div>
+              </div>
+              <div class="container_item_secao_objetivos">
+                <img src="./img/img_objetivos_16.avif" alt="">
+                <div>
+                  <b>Isaías 32:17</b>
+                  <p class="p_container_item_secao_objetivos">"E o efeito da justiça será paz, e a operação da justiça, repouso e segurança para sempre."</p>
+                </div>  
+              </div> 
+            </div>
+      </div>
+     </section>
+      <!-----------------------------------------FECHA OBJETIVOS----------------------------------------------->
+
+
+
+
+
+ 
 
 
 
@@ -69,5 +212,6 @@
     <!-----------------------------------------BOOTSTRAP JS---------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
+    <script src="./js/index.js"></script>
 </body>
 </html>
