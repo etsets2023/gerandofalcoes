@@ -1,42 +1,69 @@
-//////////////////////////////////////BTN MOBILE//////////////////////////////////////////////////////////
-const btnMobile = document.querySelector('#btn_mobile');
+/////////////////////////////////////MENU HAMBURGER DROP DOWN/////////////////////////////////
+let btnMobile = document.getElementById('btn_mobile');
 
 function toggleMenu(){
-    const nav = document.querySelector('#nav');
+    let nav = document.getElementById('nav');
     nav.classList.toggle('active');
+    
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-//////////////////////////////////////BTN MOBILE//////////////////////////////////////////////////////////
 
 
-//////////////////////////////////////UL INSTITUCIONAL/////////////////////////////////////////////////////
-const linkInstitucional = document.querySelector('.link_institucional');
-const ulInstitucional = document.querySelector('.ul_institucional');
 
-linkInstitucional.addEventListener('click', () =>{
-    ulInstitucional.classList.toggle('show')
+/////////////////////ALTERAR MENU HAMBURGER PRARA X///////////////////////////
+function changeIcon(icon){
+    icon.classList.toggle('bi-x-lg')
+}
+
+
+
+/////////////////////////////////////DROP DOWN/////////////////////////////////
+let linkDropdown = document.querySelector('#link_dropdown')
+let ulDropdown = document.querySelector('.ul_dropdown')
+
+linkDropdown.addEventListener('click', ()=>{
+    ulDropdown.classList.toggle('block')
+    ulDropdown2.classList.remove('block')
+    // setaDropdown.classList.toggle('bi-caret-up-fill')
 })
 
-linkInstitucional.addEventListener('blur', () =>{
-    ulInstitucional.classList.remove('show')
+linkDropdown.addEventListener('blur', ()=>{
+    ulDropdown.classList.remove('block')
+    ulDropdown2.classList.remove('block')
+    // setaDropdown.classList.toggle('bi-caret-up-fill')
+  
 })
 
-//////////////////////////////////////FECHA INSTITUCIONAL/////////////////////////////////////////////////////
 
+/////////////////////////////////////DROP DOWN2/////////////////////////////////
+let linkDropdown2 = document.querySelector('#link_dropdown2')
+let ulDropdown2 = document.querySelector('.ul_dropdown2')
 
-//////////////////////////////////////UL PROJETOS/////////////////////////////////////////////////////
-const linkProjetos = document.querySelector('.link_projetos');
-const ulProjetos = document.querySelector('.ul_projetos');
-
-linkProjetos.addEventListener('click', () =>{
-    ulProjetos.classList.toggle('show')
+linkDropdown2.addEventListener('click', ()=>{
+    ulDropdown2.classList.toggle('block')
+    ulDropdown.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill')
 })
 
-linkProjetos.addEventListener('blur', () =>{
-    ulProjetos.classList.remove('show')
+linkDropdown2.addEventListener('blur', ()=>{
+    ulDropdown2.classList.remove('block')
+    ulDropdown.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill')
+  
 })
-//////////////////////////////////////FECHA PROJETOS/////////////////////////////////////////////////////
+
+
+
+
+/////////////////////////////////////SETA DROPDOWN/////////////////////////////////
+let setaDropdown = document.querySelector('#icone_dropdown')
+let setaDropdown2 = document.querySelector('#icone_dropdown2')
+
+function seta (){
+    setaDropdown.classList.toggle('bi-caret-up-fill')
+}
+
 
 
 //////////////////////////////////////DATA ANIME////////////////////////////////////////////////////////////

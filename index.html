@@ -4,144 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerando Falcões</title>
-    <!-----------------------------------------BOOTSTRAP CSS---------------------------------------->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    
+   
     <!-----------------------------------------BOOTSTRAP ICONS-------------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!----------------------------------------CSS CUSTOMIZADO--------------------------------------->
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <!-----------------------------------------NAV BAR----------------------------------------------->
 
-    <header id="header">
-
-      <a href="#"><img class="logo_header" src="./img/img_logo_gerando_falcoes.avif" alt=""></a>
-    
-      <nav id="nav">
-        <div style="display: flex; align-items:center;">
-          
-          <a href="#" id="btn_mobile" class="btn_mobile"><i class="bi bi-list" style="color: white; font-size: 30px;"></i></a>
-        </div>        
+  <!----------------------------------------NAVBAR--------------------------------------->
+  <header id="header">
+    <a ref="" id="logo"><img class="img_logo" src="./img/img_logo_gerando_falcoes.avif" alt=""></a>
+    <button id="btn_mobile">
+        <i class="bi bi-list" style="font-size: 28px; color: white;" onclick="changeIcon(this)"></i>
+        <!-- <span id="hamburger" class="hamburger"></span> -->
+    </button>
+    <nav id="nav">
         <ul id="menu">
+            <li><a class="a_menu" href="#">Sobre</a></li>
 
-          <li class="li_inicio">
-            <a class="link_inicio" href="">Início</a>
-          </li>
+            <li class="li">
+                <a class="a_menu" id="link_dropdown" href="#" style="display: flex; align-items: center;">Institucional<i id="icone_dropdown" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown hidden">
+                  <li class="li_dropdown"><a class="a_dropdown" href="#">Sobre nós</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="#">Atuação</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="#">Transparência</a></li>
+                </ul>
+            </li>
 
+            <li class="li">
+                <a class="a_menu" id="link_dropdown2" href="#" style="display: flex; align-items: center;">Projetos<i id="icone_dropdown2" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown2 hidden">
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Sobre nós</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Atuação</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Transparência</a></li>
+                </ul>
+            </li>
 
-          <li class="li_institucional">
-            <a class="link_institucional" href="#" style="display: flex; align-items: center;">Intitucional<i style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
-            <ul class="ul_institucional hidden">
-              <li class="li_institucional"><a class="a_institucional" href="#">Sobre nós</a></li>
-              <li class="li_institucional"><a class="a_institucional" href="#">Atuação</a></li>
-              <li class="li_institucional"><a class="a_institucional" href="#">Transparência</a></li>
-            </ul>
-          </li>
+           
 
-          <li class="li_projetos">
-            <a class="link_projetos" href="#" style="display: flex; align-items: center;">Projetos<i style="margin-left: 8px;" class="bi bi-caret-down-fill"></i></a>
-            <ul class="ul_projetos hidden">
-              <li class="li_projetos"><a class="a_projetos" href="#">Startup Social</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">Academia do Emprego</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">Alfabetização / Reforço</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">Cuidador de Idosos</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">Jovem Falcão</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">V.tal & Telemont</a></li>
-              <li class="li_projetos"><a class="a_projetos" href="#">Muay Thai</a></li>
-            </ul>
-          </li> 
-
-          <li class="li_como_ajudar">
-            <a class="link_como_ajudar" style="width: 200px;" href="#"><p style="width: 120px;" class="link_como_ajudar">Como ajudar?</p>  </a>
-          </li>
-
-          <li class="li_doar">
-            <a class="link_doar" href="#">DOAR</a>
-          </li>
-        
+            <li>
+                <a class="a_menu" href="#">Produtos</a>
+            </li>
+            <li><a class="a_menu" href="#">Portfólio</a></li>
+            <li><a class="a_menu" href="#">Contatos</a></li>
         </ul>
-      </nav>
+    </nav>
   </header>
+   <!----------------------------------------FECHA NAVBAR--------------------------------------->
 
-
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
-        <div class="container">
-
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample07">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active nav_link" style="color: white;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Institucional</a>
-                <ul class="dropdown-menu dropdown_menu">
-                  <li><a class="dropdown-item" href="#">Sobre nós</a></li>
-                  <li><a class="dropdown-item" href="#">Atuação</a></li>
-                  <li><a class="dropdown-item" href="#">Transparência</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" style="color: white;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projetos</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Startup Social</a></li>
-                  <li><a class="dropdown-item" href="#">Academia do Emprego</a></li>
-                  <li><a class="dropdown-item" href="#">Alfabetização / Reforço</a></li>
-                  <li><a class="dropdown-item" href="#">Cuidador de Idosos</a></li>
-                  <li><a class="dropdown-item" href="#">Jovem Falcão</a></li>
-                  <li><a class="dropdown-item" href="#">V.tal & Telemont</a></li>
-                  <li><a class="dropdown-item" href="#">Muay Thai</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a style="font-size: 15px;" class="nav-link active" href="#">Como ajudar?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">DOAR</a>
-              </li>
-             
-            </ul>
-            
-          </div>
-
+    <!----------------------------------------MAIN----------------------------------------------->
+    <main id="main">
+      <div class="container_main">
+        <h1 data-anime="up">Iluminando vidas, transformando realidades.</h1>
+        <div class="container_main_btn">
+          <h2 class="h2_main" data-anime="up">Junte-se ao Farol na Quebrada e faça a diferença na comunidade!</h2>
+          <a class="btn_main" href="#" data-anime="up">DOE AGORA!</a>
         </div>
-      </nav> -->
-    <!---------------------------------------FECHA NAV BAR------------------------------------------>
+      </div>
+    </main>
 
 
-    <!-----------------------------------------MAIN----------------------------------------------->
-      <main>
-        <div class="container_main">
-            <h1 class="h1_container_main"  data-anime="up">Transformando comunidades, uma vida de cada vez.</h1>
-            <div class="container_main_btn">
-                <p class="p_container_main"  data-anime="up">Junte-se ao Capoeira Social e faça a diferença na comunidade!</p>
-                <a class="btn_container_main" ref="#"  data-anime="up">DOE AGORA!</a>
+    <!----------------------------------------VIDEO------------------------------------------->
+    <section id="video">
+      <div class="container_video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dI9HoQ4rNaA?si=bKGQiwCDiwP2rBEa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!-----------------------------------FECHA VIDEO------------------------------------------->
+
+     <!--------------------------------------NUMEROS------------------------------------------->
+     <section id="numeros">
+      <div class="container_numeros">
+        <div class="item1_container_numeros">
+          <h2 class="h2_numeros">+ DE 70</h2>
+          <p class="p_numeros">VOLUNTÁRIOS</p>
+        </div>
+        <div class="item1_container_numeros">
+          <h2 class="h2_numeros">+ DE 70</h2>
+          <p class="p_numeros">VOLUNTÁRIOS</p>
+        </div>
+        <div class="item1_container_numeros">
+          <h2 class="h2_numeros">+ DE 70</h2>
+          <p class="p_numeros">VOLUNTÁRIOS</p>
+        </div>
+      </div>
+      <p class="ultimo_p_numeros">...e é só o começo!</p>
+    </section>
+    <!--------------------------------FECHA NUMEROS-------------------------------------------------->
+
+     <!--------------------------------------INTEGRALIDADE------------------------------------------->
+     <section id="integralidade">
+        <div class="container_integralidade">
+          <div class="containertexto_integralidade">
+            <h2 class="h2_integralidade">Entendemos que a mudança real exige tempo, esforço e dedicação consistentes, e estamos comprometidos em investir tudo isso nas comunidades que servimos."</h2>
+            <div>
+              <p class="p_integralidade">Compreendemos profundamente que a transformação genuína requer mais do que simples ações momentâneas. Estamos comprometidos em investir tempo, esforço e dedicação consistentes em cada comunidade a honra de servir.</p>
+              <p class="p_integralidade">Acreditamos que é essa abordagem persistente que nos permite construir relacionamentos sólidos, entender as verdadeiras necessidades locais e, finalmente, alcançar resultados impactantes e duradouros. Nosso compromisso não é apenas oferecer ajuda temporária, mas sim trabalhar lado a lado com as comunidades, criando um futuro melhor para todos.”</p>
+            </div>
+          </div>
+          <div class="containerimagem_integralidade">
+            <img class="img_integralidade" src="./img/img_secao_integridade.jpg" alt="">
+          </div>
+        </div>
+     </section>
+     <!-------------------------------FECHA INTEGRALIDADE--------------------------------------------->
+
+
+     <!--------------------------------------------OBJETIVOS------------------------------------------->
+     <section id="objetivos">
+      <div class="container_objetivos">
+        <div class="container1_objetivos">
+          <img src="./img/img_objetivos_sustentavel.avif" alt="">
+          <p class="p_container1_objetivos">ODS são <b>metas estabelecidas pela ONU</b>  para guiar ações globais rumo a um futuro mais sustentável. Compreendendo diversas áreas, são um chamado para as ONGs atuarem em prol de um mundo melhor e mais justo.</p>
+        </div>
+
+        <div class="container2_objetivos">
+            <div class="card_container2_objetivos">
+              <img src="./img/img_objetivos_1.avif" alt="">
+              <div class="item_container2_objetivos">
+                <b>Salmos 82:3</b>
+                <p class="p_item_container2_objetivos">"Fazei justiça ao pobre e ao órfão; justificai o aflito e o necessitado."</p>
+              </div>
+            </div>
+            <div class="card_container2_objetivos">
+              <img src="./img/img_objetivos_2.avif" alt="">
+              <div class="item_container2_objetivos">
+                <b>Mateus 25:35-37</b>
+                <p class="p_item_container2_objetivos">"Pois eu tive fome, e vocês me deram de comer; tive sede, e vocês me deram de beber; fui estrangeiro, e vocês me acolheram."</p>
+              </div>
+            </div>
+            <div class="card_container2_objetivos">
+              <img src="./img/img_objetivos_3.avif" alt="">
+              <div class="item_container2_objetivos">
+                <b>Eclesiastes 11:10</b>
+                <p class="p_item_container2_objetivos">"Afaste do coração a ansiedade e acabe com o sofrimento do seu corpo, pois a juventude e o vigor são passageiros."</p>
+              </div>
+            </div>
+            <div class="card_container2_objetivos">
+              <img src="./img/img_objetivos_4.avif" alt="">
+              <div class="item_container2_objetivos">
+                <b>Provérbios 16:16</b>
+                <p class="p_item_container2_objetivos">"Quanto melhor é adquirir a sabedoria do que o ouro! E quanto mais excelente, adquirir a prudência do que a prata!"</p>
+              </div>
             </div>
         </div>
-      </main>
-    <!---------------------------------------FECHA MAIN------------------------------------------>
+        
+        <div class="container2_objetivos">
+          <div class="card_container2_objetivos">
+            <img src="./img/img_objetivos_8.avif" alt="">
+            <div class="item_container2_objetivos">
+              <b>1 Tessalonicenses 4:11</b>
+              <p class="p_item_container2_objetivos">"Esforcem-se para ter uma vida tranquila, cuidar dos seus próprios negócios e trabalhar com as próprias mãos.”</p>
+            </div>
+          </div>
+          <div class="card_container2_objetivos">
+            <img src="./img/img_objetivos_10.avif" alt="">
+            <div class="item_container2_objetivos">
+              <b>Isaías 1:17</b>
+              <p class="p_item_container2_objetivos">"Aprendam a fazer o bem! Busquem a justiça, acabem com a opressão. Lutem pelos direitos do órfão, defendam a causa da viúva."</p>
+            </div>
+          </div>
+          <div class="card_container2_objetivos">
+            <img src="./img/img_objetivos_16.avif" alt="">
+            <div class="item_container2_objetivos">
+              <b>Isaías 32:17</b>
+              <p class="p_item_container2_objetivos">“E o efeito da justiça será paz, e a operação da justiça, repouso e segurança para sempre."</p>
+            </div>
+          </div>        
+      </div>
+      </div>
+     </section>
+     <!--------------------------------------FECHA OBJETIVOS------------------------------------------->
 
-    <!-----------------------------------------VIDEO ----------------------------------------------->
-    <section class="secao_video">
-      <iframe src="https://www.youtube.com/embed/dI9HoQ4rNaA?si=GXXDBCgov2j4pkMv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section id="atuacao">
+      <h2 class="h2_atuacao">Atuação</h2>
+      <div class="container_atuacao">
+        <div class="item1_container_atuacao">
+          <h3>Educação</h3>
+          <ul class="ul_atuacao">
+            <li>Alfabetização</li>
+            <li>Reforço Escolar </li>
+            <li>Clube da Leitura </li>
+            <li>Educação Socioemocional </li>
+          </ul>
+        </div>
+
+        <div class="item1_container_atuacao">
+          <h3>Integração Social</h3>
+          <ul class="ul_atuacao">
+            <li>Capoeira</li>
+            <li>Ballet</li>
+            <li>Skate</li>
+            <li>Boxe</li>
+          </ul>
+        </div>
+
+        <div class="item1_container_atuacao">
+          <h3>Qualificação Profissional</h3>
+          <ul class="ul_atuacao">
+            <li>Manicure</li>
+            <li>Barbearia</li>
+            <li>Educação Financeira</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
-  <!---------------------------------------FECHA VIDEO------------------------------------------>
 
 
 
+     <!--------------------------------------PARCEIROS--------------------------------------->
+     <section id="parceiros">
+      <h2 class="h2_parceiros">Nossos Parceiros</h2>
+    </section>
+    <!--------------------------------FECHA PARCEIROS-------------------------------------------------->
 
-
-    <!-----------------------------------------BOOTSTRAP JS---------------------------------------->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-    
-    <script src="./js/index.js"></script>
-</body>
+    </body>
 </html>
