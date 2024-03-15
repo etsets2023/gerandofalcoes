@@ -39,6 +39,25 @@ body{
     list-style: none;
 }
 
+.ul_institucional, .ul_projetos{
+    position: absolute;
+    background-color: #212338;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+
+
+
 .a_institucional, .a_projetos{
     text-decoration: none;
     color: white;
@@ -79,6 +98,7 @@ body{
 .btn_mobile{
     display: none;
 }
+
 
 
 
@@ -233,7 +253,7 @@ iframe{
 }
 
 
-@media (max-width:612px){
+@media (max-width:800px){
 
     .nav-item{
         align-self: start !important;
@@ -282,7 +302,7 @@ iframe{
 }
 
 
-@media (max-width:550px){
+@media (max-width:600px){
     .h1_container_main{
         text-align: center;
         font-size: 1.8rem;
@@ -303,7 +323,7 @@ iframe{
 
 
 
-@media (max-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (max-width:800px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
    
     #menu{
         /* display: none; */

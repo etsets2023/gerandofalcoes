@@ -7,11 +7,36 @@ function toggleMenu(){
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+//////////////////////////////////////BTN MOBILE//////////////////////////////////////////////////////////
 
 
+//////////////////////////////////////UL INSTITUCIONAL/////////////////////////////////////////////////////
+const linkInstitucional = document.querySelector('.link_institucional');
+const ulInstitucional = document.querySelector('.ul_institucional');
+
+linkInstitucional.addEventListener('click', () =>{
+    ulInstitucional.classList.toggle('show')
+})
+
+linkInstitucional.addEventListener('blur', () =>{
+    ulInstitucional.classList.remove('show')
+})
+
+//////////////////////////////////////FECHA INSTITUCIONAL/////////////////////////////////////////////////////
 
 
+//////////////////////////////////////UL PROJETOS/////////////////////////////////////////////////////
+const linkProjetos = document.querySelector('.link_projetos');
+const ulProjetos = document.querySelector('.ul_projetos');
 
+linkProjetos.addEventListener('click', () =>{
+    ulProjetos.classList.toggle('show')
+})
+
+linkProjetos.addEventListener('blur', () =>{
+    ulProjetos.classList.remove('show')
+})
+//////////////////////////////////////FECHA PROJETOS/////////////////////////////////////////////////////
 
 
 //////////////////////////////////////DATA ANIME////////////////////////////////////////////////////////////
