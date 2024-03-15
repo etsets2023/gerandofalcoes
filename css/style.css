@@ -510,11 +510,11 @@ iframe{
     }
 
     .h2_numeros{
-    font-size: 2rem;   
+    font-size: 1.5rem;   
 }
 
 .p_numeros{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .img_objetivos{
@@ -525,6 +525,15 @@ iframe{
     margin-right: 60px;
 }
 
+.card_container2_objetivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p_item_container2_objetivos{
+    text-align: center;
+}
 
 }
 
