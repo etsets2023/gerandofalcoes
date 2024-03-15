@@ -8,10 +8,87 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: "Poppins", sans-serif;
     background-color: #f4f8fb;
 }
+
+#header{
+    width: 100%;
+    background-color: #212338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+    padding-right: 15%;
+    padding-left: 5%;
+    
+    
+}
+
+.logo_header{
+    width: 250px;
+}
+
+.ul_institucional, .ul_projetos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.a_institucional, .a_projetos{
+    text-decoration: none;
+    color: white;
+}
+
+.link_inicio, .link_institucional, .link_projetos, .link_como_ajudar, .link_doar{
+    text-decoration: none;
+    color: white;
+    /* display: block; */
+    /* padding: .5rem; */
+    /* background-color: red; */
+}
+
+.link_inicio:hover, .link_institucional:hover, .link_projetos:hover, .link_como_ajudar:hover, .link_doar:hover{
+    color: yellow;
+    text-decoration: underline;
+    transition: 1s ease;
+  
+}
+
+
+.li_inicio, .li_institucional, .li_projetos, .li_como_ajudar, .li_doar{
+    list-style: none;
+}
+
+
+.a_institucional:hover, .a_projetos:hover{
+    color: yellow;
+    text-decoration: underline;
+    transition: 1s ease;
+}
+
+#menu{
+    display: flex;
+    gap:5%
+}
+
+.btn_mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 .navbar{
     background-color: #212338;
@@ -216,4 +293,70 @@ iframe{
   
 
 }
+
+
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+
+
+
+
+@media (max-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+   
+    #menu{
+        /* display: none; */
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        background-color: #212338;
+        transition: .6s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu {
+        height: 100px;
+        /* display: block; */
+        height: 250px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .link_inicio, .link_institucional, .link_projetos, .link_como_ajudar, .link_doar{
+        width: 300px;  
+        padding: 1rem 0;
+        margin-left: 1rem;
+        
+    }
+
+     .link_como_ajudar{ 
+        margin-top: -25px;
+    }  
+
+    .btn_mobile{
+        display: flex;
+        padding: .5rem 1 rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+
+   
+}
+
+
+
+
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 

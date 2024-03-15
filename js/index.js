@@ -1,3 +1,20 @@
+//////////////////////////////////////BTN MOBILE//////////////////////////////////////////////////////////
+const btnMobile = document.querySelector('#btn_mobile');
+
+function toggleMenu(){
+    const nav = document.querySelector('#nav');
+    nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+
+
+
+
+
+
+
+//////////////////////////////////////DATA ANIME////////////////////////////////////////////////////////////
 const item = document.querySelectorAll("[data-anime");
 
 const animeScroll = () => {
@@ -16,3 +33,5 @@ animeScroll()
 window.addEventListener('scroll', () =>{
     animeScroll();
 })
+
+//////////////////////////////////////////FECHA DATA ANIME///////////////////////////////////////////////////
