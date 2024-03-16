@@ -22,36 +22,86 @@ function changeIcon(icon){
 let linkDropdown = document.querySelector('#link_dropdown')
 let ulDropdown = document.querySelector('.ul_dropdown')
 
-linkDropdown.addEventListener('click', ()=>{
-    ulDropdown.classList.toggle('block')
+linkDropdown.addEventListener('mouseover', ()=>{
+    ulDropdown.classList.add('block')
     ulDropdown2.classList.remove('block')
-    // setaDropdown.classList.toggle('bi-caret-up-fill')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill')
 })
 
-linkDropdown.addEventListener('blur', ()=>{
+linkDropdown.addEventListener('mouseout', ()=>{
     ulDropdown.classList.remove('block')
     ulDropdown2.classList.remove('block')
-    // setaDropdown.classList.toggle('bi-caret-up-fill')
-  
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
 })
+
+ulDropdown.addEventListener('mouseover', ()=>{
+    ulDropdown.classList.add('block')
+    ulDropdown2.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
+})
+
+ulDropdown.addEventListener('mouseout', ()=>{
+    ulDropdown.classList.remove('block')
+    ulDropdown2.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
+})
+
+
+// linkDropdown.addEventListener('click', ()=>{
+//     ulDropdown.classList.toggle('block')
+//     ulDropdown2.classList.remove('block')
+//     // setaDropdown.classList.toggle('bi-caret-up-fill')
+// })
+
+// linkDropdown.addEventListener('blur', ()=>{
+//     ulDropdown.classList.remove('block')
+//     ulDropdown2.classList.remove('block')
+//     // setaDropdown.classList.toggle('bi-caret-up-fill')
+  
+// })
 
 
 /////////////////////////////////////DROP DOWN2/////////////////////////////////
 let linkDropdown2 = document.querySelector('#link_dropdown2')
 let ulDropdown2 = document.querySelector('.ul_dropdown2')
 
-linkDropdown2.addEventListener('click', ()=>{
-    ulDropdown2.classList.toggle('block')
+
+linkDropdown2.addEventListener('mouseover', ()=>{
+    ulDropdown2.classList.add('block')
     ulDropdown.classList.remove('block')
     // setaDropdown2.classList.toggle('bi-caret-up-fill')
 })
 
-linkDropdown2.addEventListener('blur', ()=>{
+linkDropdown2.addEventListener('mouseout', ()=>{
     ulDropdown2.classList.remove('block')
     ulDropdown.classList.remove('block')
-    // setaDropdown2.classList.toggle('bi-caret-up-fill')
-  
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
 })
+
+ulDropdown2.addEventListener('mouseover', ()=>{
+    ulDropdown2.classList.add('block')
+    ulDropdown.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
+})
+
+ulDropdown2.addEventListener('mouseout', ()=>{
+    ulDropdown2.classList.remove('block')
+    ulDropdown.classList.remove('block')
+    // setaDropdown2.classList.toggle('bi-caret-up-fill') 
+})
+
+// linkDropdown2.addEventListener('click', ()=>{
+//     ulDropdown2.classList.toggle('block')
+//     ulDropdown.classList.remove('block')
+//     // setaDropdown2.classList.toggle('bi-caret-up-fill')
+// })
+
+// linkDropdown2.addEventListener('blur', ()=>{
+//     ulDropdown2.classList.remove('block')
+//     ulDropdown.classList.remove('block')
+//     // setaDropdown2.classList.toggle('bi-caret-up-fill')
+  
+// })
 
 
 
