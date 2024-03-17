@@ -6,15 +6,9 @@ function toggleMenu(){
     nav.classList.toggle('active');
     
 }
-
 btnMobile.addEventListener('click', toggleMenu);
 
 
-
-/////////////////////ALTERAR MENU HAMBURGER PRARA X///////////////////////////
-function changeIcon(icon){
-    icon.classList.toggle('bi-x-lg')
-}
 
 
 
@@ -115,6 +109,11 @@ function seta (){
 }
 
 
+/////////////////////ALTERAR MENU HAMBURGER PRARA X///////////////////////////
+function changeIcon(icon){
+    icon.classList.toggle('bi-x-lg')
+}
+
 
 //////////////////////////////////////DATA ANIME////////////////////////////////////////////////////////////
 const item = document.querySelectorAll("[data-anime");
@@ -137,3 +136,61 @@ window.addEventListener('scroll', () =>{
 })
 
 //////////////////////////////////////////FECHA DATA ANIME///////////////////////////////////////////////////
+let secaoNumeros = document.getElementById('video');
+// console.log(secaoNumeros)
+
+//COM ESSA FUNÇÃO CONSIGO VER QUANTOS PX QUE O MEU ELEMENTO ESTÁ DO TOP DA TELA
+const animeScrollNumeros = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.100;
+    //console.log(windowTop)
+    if (windowTop > secaoNumeros.offsetTop){
+        cronometro = setInterva (function () {
+             let tempo70 = document.getElementById('tempo70').innerHTML;
+             var soma = parseInt(tempo70)  + 1;
+             document.getElementById('tempo70').innerHTML = soma; 
+             if(soma===70){   
+                document.getElementById('tempo70').innerHTML = 70;
+                pararContagem();
+                
+             } else {
+                
+             }
+                         
+         },100)                              
+    }     
+}
+animeScrollNumeros()
+
+window.addEventListener('scroll', () =>{
+    animeScrollNumeros();
+})
+
+function pararContagem(){
+    clearInterval(cronometro);
+    return
+}
+
+//FECHA COM ESSA FUNÇÃO CONSIGO VER QUANTOS PX QUE O MEU ELEMENTO ESTÁ DO TOP DA TELA
+
+
+window.addEventListener('scroll', () =>{
+    animeScrollNumeros();
+})
+
+// setInterval(function contagem() {
+//      let tempo70 = document.getElementById('tempo70').innerHTML;
+//       var soma = parseInt(tempo70)  + 1;
+//       document.getElementById('tempo70').innerHTML = soma;  
+//   },10)
+
+
+
+
+
+
+
+
+   
+
+
+
