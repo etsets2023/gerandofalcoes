@@ -1,11 +1,6 @@
 #main_sobre{
     width: 100%;
     background-color: #365186;
-    padding-block: 50px;
-    background-image: url('../img/img_sobre_nos_main.png');
-    background-position: cover;
-    background-repeat: no-repeat;
-    padding-block: 100px;
 }
 
 .container_main_sobre{
@@ -14,8 +9,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: end;
+    align-items: start;
     gap: 50px;
+    padding-top: 150px;
 }
 
 .container_main_btn_sobre{
@@ -23,7 +19,12 @@
     width: 400px;
     display: flex;
     flex-direction: column;
-     
+    background-image: url('../img/img_sobre_nos_main.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    gap: 50px;
 }
 
 .container_main_texto_sobre{
@@ -271,17 +272,31 @@
         gap: 50px;
     }
 
+
    }
 
 
 
    @media (max-width: 600px){
-    .container_main_btn_sobre{
-        margin-block: 80px;  
+
+    .container_main_sobre{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+        padding-top: 10px;
     }
 
-    .h1_container_main_sobre{
-        margin-bottom: 50px;
+    .h3_main_sobre{
+        font-size: 1.5rem;
+    }
+    .h2_main_sobre{
+        font-size: 2.2rem;
+        text-decoration: underline;
+    
     }
     
 
@@ -289,6 +304,18 @@
    }
 
    @media (max-width: 400px){
+    .container_main_sobre{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
     .img_container_main_texto_sobre{
         width: 300px;
     }
