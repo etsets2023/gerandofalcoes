@@ -272,3 +272,22 @@
     }
 
    }
+
+   @media (max-width: 400px){
+    .img_container_main_texto_sobre{
+        width: 300px;
+    }
+
+    .h3_main_sobre{
+        font-size: 1.5rem;
+    }
+    .h2_main_sobre{
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .h2_frase_de_efeito_sobre_nos{
+        font-size: 2.2rem;
+    }
+   }
+   
