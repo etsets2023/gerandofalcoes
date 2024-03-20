@@ -273,6 +273,21 @@
 
    }
 
+
+
+   @media (max-width: 600px){
+    .container_main_btn_sobre{
+        margin-block: 80px;  
+    }
+
+    .h1_container_main_sobre{
+        margin-bottom: 50px;
+    }
+    
+
+    
+   }
+
    @media (max-width: 400px){
     .img_container_main_texto_sobre{
         width: 300px;
@@ -289,5 +304,7 @@
     .h2_frase_de_efeito_sobre_nos{
         font-size: 2.2rem;
     }
+
+
    }
    
