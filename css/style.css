@@ -297,11 +297,12 @@ iframe{
 }
 
 .container_objetivos{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 5px;
 }
 
 .container1_objetivos{
@@ -642,7 +643,7 @@ iframe{
 }
 
 .p_numeros{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .img_objetivos{

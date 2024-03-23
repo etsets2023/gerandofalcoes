@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerando Falcões</title>
+   
+    <!-----------------------------------------BOOTSTRAP ICONS-------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!----------------------------------------CSS CUSTOMIZADO--------------------------------------->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/atuacao.css">
+
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+
+  <!----------------------------------------NAVBAR--------------------------------------->
+  <header id="header">
+    <a ref="" id="logo"><img class="img_logo" src="./img/img_logo_gerando_falcoes.avif" alt=""></a>
+   
+    <nav id="nav">
+        <ul id="menu">
+            <li><a class="a_menu" href="#">Início</a></li>
+
+            <li class="li">
+                <a class="a_menu" id="link_dropdown" href="#" style="display: flex; align-items: center;">Institucional<i id="icone_dropdown" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown hidden">
+                  <li class="li_dropdown"><a class="a_dropdown" href="./sobre_nos.html">Sobre nós</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="./atuacao.html" >Atuação</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="#" >Transparência</a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                <a class="a_menu" id="link_dropdown2" href="#" style="display: flex; align-items: center;">Projetos<i id="icone_dropdown2" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown2 hidden">
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Startup Social</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Academia do Emprego</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Alfabetização / Reforço</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Cuidador de Idosos</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Jovem Falcão</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">V.tal & Telemont</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Muay Thai</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="a_menu" href="#">Como ajudar?</a>
+            </li>
+            <li><a class="a_menu" href="#">DOAR</a></li>
+            
+            <li class="li">
+              <a class="a_menu" id="link_dropdown2" href="#" style="display: flex; align-items: center;">PT<i id="icone_dropdown2" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+              <ul class="ul_dropdown2 hidden">
+                <li class="li_dropdown2"><a class="a_dropdown2" href="#">Português</a></li>
+              </ul>
+          </li>
+        </ul>
+    </nav>
+    <button id="btn_mobile">
+      <i class="bi bi-list" style="font-size: 28px; color: white;" onclick="changeIcon(this)"></i>
+      <!-- <span id="hamburger" class="hamburger"></span> -->
+  </button>
+  </header>
+   <!----------------------------------------FECHA NAVBAR--------------------------------------->
+
+    <!----------------------------------------MAIN----------------------------------------------->
+    <main id="main_atuacao">
+      <div class="container_main_atuacao">
+        <img class="img_atuacao_main" src="./img/img_atuacao_main-removebg-preview.png" alt="">
+        <div class="container_main_atuacao_texto">
+
+          <div>
+            <h1 class="h1_atuacao" data-anime="up">NOSSA ATUAÇÃO</h1>
+            <p data-anime="up" style="text-align: justify;">Atuamos com <span> diversas famílias carentes </span> com foco nas crianças,
+              adolescentes e jovens a partir dos 7 anos, na cidade de Sapucaia do
+              Sul, Portão e Charqueadas.</p> <br>
+              <p class="p_atuacao"  style="text-align: justify;" data-anime="up"> A partir delas conseguimos entender toda a dinâmica familiar e
+              ajuda-las <span>de uma forma holística</span> e mais <span> assertiva. </span></p> 
+          </div>  
+            
+          <div class="container2_main_atuacao_texto" data-anime="up">
+              <h2 style="font-size: 1rem; width: 400px;">Estamos em três cenários:</h2>
+              <div style="display: flex; flex-flow: column; gap: 50px;">
+                <p style="display: flex; align-items: center; font-size: 0.8rem;"><img style="width: 45px;" src="./img/bolinha.png" alt=""> <span style="font-size: 1.8rem; color: white; margin-right: 10px;">01</span> Nosso espaço físico</p>
+                <p style="display: flex; align-items: center; font-size: 0.8rem;"><img style="width: 45px;" src="./img/bolinha.png" alt=""> <span style="font-size: 1.8rem; color: white; margin-right: 10px;">02</span> Nos bastidores de escolas públicas e
+                  espaços públicos.</p>
+                <p style="display: flex; align-items: center; font-size: 0.8rem;"><img style="width: 45px;" src="./img/bolinha.png" alt=""> <span style="font-size: 1.8rem; color: white; margin-right: 10px;">03</span> Em parcerias com lideranças comunitárias em
+                  outros territórios vulneráveis.</p>
+              </div>     
+          </div>     
+        </div>    
+      </div>
+      <div class="container_img_atuacao">
+        <img class="img_logo_atuacao_main" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+      </div>
+    </main>
+
+   
+
+    <!----------------------------------------CERTIFICACOES------------------------------------------->
+    <section id="certificacoes">
+
+      <div class="certificacoes_container">
+        <h2 class="h2_certificacoes" data-anime="up">NOSSAS CERTIFICAÇÕES</h2>
+
+        <div data-anime="up">
+           <p style="border-left: 4px solid white; padding-left: 20px;">UTILIDADE PÚBLICA ESTADUAL <br>Registro Nº 3082</p> <br>
+           <p style="border-left: 4px solid white; padding-left: 20px;">UTILIDADE PÚBLICA MUNICIPAL <br>  Lei Nº 4.165 de 17 de Dezembro de 2021</p> <br>
+           <p style="border-left: 4px solid white; padding-left: 20px;">Conselho Municipal da Criança e <br>  Adolescente | Registro 022/2020</p>
+        </div>
+        <div style="padding-left: 20px;" data-anime="up">
+          <p>Certidão de Registro de Assistência <br>Social Estadual | Registro Nº 1000372</p>  <br> 
+          <p>Conselho Muncipal de Assistência <br> Social | Registro 21/2021</p>  <br>
+          <p>Conselho Municipal da Criança e <br> Adolescente | Registro 022/2020</p>
+        </div>
+
+        <h2 class="h2_pegada_forte" data-anime="up">#PEGADA FORTE</h2>
+        <img src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+      </div>
+
+      <div>
+        <img src="./img/img_certificacoes-removebg-preview.png" alt="">
+      </div>
+    
+      
+    </section>
+    <!-----------------------------------FECHA CERTIFICACOES------------------------------------------->
+
+     <!--------------------------------------IMPACTO SOCIAL------------------------------------------->
+     <section id="impacto_social">
+      <div class="container_impacto_social">
+        <h2 class="h2_impacto_social" data-anime="up">TECNOLOGIA + IMPACTO SOCIAL</h2>
+        <img src="./img/img1_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img2_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img3_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img4_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img5_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img6_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img7_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img8_impacto_social.png" alt="" data-anime="up">
+        <img src="./img/img9_impacto_social.png" alt="" data-anime="up">
+        <div class="container_logo_impacto_social">
+          <img class="logo_impacto_social" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+        </div>
+      </div>
+    </section>
+    <!--------------------------------FECHA IMPACTO SOCIAL-------------------------------------------------->
+
+     <!--------------------------------------NOSSO IMPACTO------------------------------------------->
+     <section id="nosso_impacto">
+      <div class="container_impacto_social">
+        <h2 class="h2_impacto_social" data-anime="up">NOSSO IMPACTO EM 2023</h2>
+
+        <div class="container1_nosso_impacto" data-anime="up">
+          <h3 class="h3_nosso_impacto" style="text-align: center; align-self: center;">POLO-PECE</h3>
+          <p class="p_polo_pece"  style="text-align: center; align-self: center;">Polo Esportivo Cultural e Educacional</p>
+         
+          <div class="numeros">
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600;">ATENDIMENTOS <span style="font-size: 2rem; color: white; font-weight: 600;">3.931</span></p>
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600;">FREQUÊNCIA <span style="font-size: 2rem; color: white; font-weight: 600; border-left: 2px solid white; padding-left: 8px;">83,11%</span></p>
+          </div>
+
+          <div style="display: flex; flex-flow: column;">
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>CAPOEIRA</p>
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>BALLET</p>
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px; font-size: 0.8rem; padding: 0; margin: 0;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>EDUCAÇÃO SOCIOEMOCIONAL</p>
+          </div>
+        </div>
+
+        <div class="container1_nosso_impacto" data-anime="up">
+          <h3 class="h3_nosso_impacto">POLO-QUALIFICAÇÃO <br>
+            PROFISSIONAL</h3>
+            <div class="numeros">
+              <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600;">ATENDIMENTOS <span style="font-size: 2rem; color: white; font-weight: 600;">3.743</span></p>
+              <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600;">FREQUÊNCIA <span style="font-size: 2rem; color: white; font-weight: 600; border-left: 2px solid white; padding-left: 8px;">75,3%</span></p>
+            </div>
+            <div style="display: flex; flex-flow: column;">
+              <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px; font-size: 0.8rem; padding: 0; margin: 0;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>Empreendedorismo Feminino</p>
+              <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>Ela Pode</p>
+              <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>Curso de Manicure</p>
+              <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>Curso de Barbearia</p> 
+            </div>        
+        </div>
+
+        <div class="container1_nosso_impacto" data-anime="up">
+          <h3 class="h3_nosso_impacto" style="text-align: center; align-self: center;">FALCONS <br> UNIVERSITY</h3>
+          <div class="numeros">
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600; display: flex; flex-flow: column;">1º SEMESTRE <span style="font-size: 2rem; color: white; font-weight: 600;">59</span> <span style="font-size: 0.5rem; color: white;">LIDERANÇAS FORMADAS</span> </p>
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600; display: flex; flex-flow: column;">2º SEMESTRE<span style="font-size: 2rem; color: white; font-weight: 600;">48</span><span style="font-size: 0.5rem; color: white;">LIDERANÇAS FORMADAS</span></p>
+          </div>
+          <div class="numeros">
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600; display: flex; flex-flow: column; width: 100%;">NOTA MÉDIA DO CURSO <span style="font-size: 2rem; color: white; font-weight: 600;">86,61%</span></p>          
+          </div>
+        </div>
+
+        <div class="container1_nosso_impacto" data-anime="up">
+          <h3 class="h3_nosso_impacto" style="text-align: center; align-self: center;">SCFV-PORTÃO</h3>
+          <p class="p_polo_pece"  style="text-align: center; align-self: center;">Serviço de Convivência e Fortalecimento de Vínculos</p>
+         
+          <div class="numeros">
+            <p style="width: 50%; font-size: 0.7rem; text-align: center; font-weight: 600; width: 100%;">TOTAL DE ATENDIMENTOS <span style="font-size: 2rem; color: white; font-weight: 600;">1.440</span></p>
+          </div>
+
+          <div style="display: flex; flex-flow: column;">
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>CRAS</p>
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>CREAS</p>
+            <p style="display: flex; align-items: center; margin: 0; padding: 0; height: 40px; font-size: 0.8rem; padding: 0; margin: 0;"><span style="font-size: 3rem; padding: 0; margin: 0;">+</span>Cadastro Único</p>
+          </div>
+        </div>
+        <div class="container_logo_impacto_social">
+          <img class="logo_impacto_social" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+        </div>
+      </div>
+    </section>
+     <!-------------------------------FECHA NOSSO IMPACTO--------------------------------------------->
+
+
+      <!-------------------------------VAMOS JUNTOS--------------------------------------------->
+     <section id="vamos_juntos">
+      <div class="container_vamos_juntos">
+
+        <div class="container_texto_vamos_juntos">
+          <h2 class="h2_vamos_juntos" data-anime="up">VAMOS JUNTOS?</h2>
+          <h3 class="h3_vamos_juntos" data-anime="up">Cada ação que tomamos no PRESENTE <br> tem o poder de moldar o <span style="font-weight: 600; color: white;"> FUTURO.</span></h3>
+          <h2 class="h2_vamos_juntos" style="text-align: center;" data-anime="up">Agradecemos pela atenção!</h2>
+          <a class="btn_main" href="#" data-anime="up">DOE AGORA!</a>
+        </div>
+
+        <div class="container_img_vamos_juntos">
+          <img src="./img/img_vamos_juntos-removebg-preview.png" alt="">
+        </div>
+
+      </div>
+     
+    </section>
+    
+
+    
+
+
+   
+
+    <!-------------------------------------------FOOTER-------------------------------------------------->
+    <footer id="footer">
+      <div class="container1_footer"  data-anime="up">
+          <h2 class="h2_footer"><span class="span_footer">#VemSerLuz.</span> Fale com a gente!</h2>
+          <p><i class="bi bi-shop"></i>AQUI VAI O ENDEREÇO</p>
+      </div>
+      <div class="container2_footer"  data-anime="up">
+        <div class="redes_footer"  >
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+          <a class="btn_footer" href="#">Doar!</a>
+        </div>
+        <div class="tel_email_footer" >
+          <p>AQUI VAI O TELEFONE</p>
+          <p>AQUI VAI O EMAIL</p>
+        </div>
+    </div> 
+    </footer>
+    <img class="link_whats" src="/img/link_whatsapp.png" alt="">
+    </body>
+</html>
