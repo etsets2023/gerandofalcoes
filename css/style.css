@@ -424,15 +424,141 @@ iframe{
 
 #parceiros{
     width: 100%;
-    display: flex;
+    display: flex;  
+    background-color: rgb(58, 90, 152); 
+    color: white;
+    flex-flow: row wrap;
     padding-block: 50px;
-    height: 300px;
-    justify-content: center;
+    gap: 20px;
+}
+
+.container_parceiros{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap; 
+    margin:  0 auto;  
 }
 
 .h2_parceiros{
+    width: 100%;
     font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
 }
+
+.h3_parceiros{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.container_parceiros_logos{
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.container_logo_parceiros{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.logo2_parceiros{
+    width: 250px;
+}
+
+
+#nossas_redes_sociais{
+    background:linear-gradient(rgba(58,90,152.3),rgba(58,90,152,.3)),url('../img/img_nossas_redes.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+    gap: 20px;
+}
+
+.h2_nossas_redes_sociais{
+    width: 90%;
+    text-align: center;
+    font-size: 2.5rem;   
+}
+
+.h3_nossas_redes_sociais{
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container_redes_links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_redes_links img{
+    width: 80px;
+}
+
+.link{
+    width: 70px !important;
+}
+
+.container_texto_nossas_redes_sociais{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.contato_whats{
+    background-color: #019701;
+    width: 50%;
+    border-radius: 18px;
+    padding: 5px;
+}
+
+.saiba_mais_nossas_redes{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-bottom: 4px dashed white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container_logo_nossas_redes{
+    /* background-color: red; */
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.logo_nossas_redes{
+    width: 250px;
+}
+
+
+
+
+
 
 #footer{
     width: 100%;
@@ -662,6 +788,12 @@ iframe{
 
 .p_item_container2_objetivos{
     text-align: center;
+}
+
+.h3_nossas_redes_sociais{
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
 }
 
 }
