@@ -320,6 +320,13 @@ span{
     }
  .container_img_vamos_juntos{
     display: none;
+    
+ }
+
+ .img_vamos_juntos{
+    align-self: start;
+    width: 50px;
+
  }
 
  .container_vamos_juntos{
