@@ -317,6 +317,7 @@ iframe{
 .p_container1_objetivos{
     text-align: center;
     font-size: 1.2rem;
+    max-width: 800px;
 }
 
 .container2_objetivos{
