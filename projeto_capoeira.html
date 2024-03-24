@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerando Falcões</title>
+   
+    <!-----------------------------------------BOOTSTRAP ICONS-------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!----------------------------------------CSS CUSTOMIZADO--------------------------------------->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/projeto_capoeira.css">
+
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+
+  <!----------------------------------------NAVBAR--------------------------------------->
+  <header id="header">
+    <a ref="" id="logo"><img class="img_logo" src="./img/img_logo_gerando_falcoes.avif" alt=""></a>
+   
+    <nav id="nav">
+        <ul id="menu">
+            <li><a class="a_menu" href="index.html">Início</a></li>
+
+            <li class="li">
+                <a class="a_menu" id="link_dropdown" href="#" style="display: flex; align-items: center;">Institucional<i id="icone_dropdown" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown hidden">
+                  <li class="li_dropdown"><a class="a_dropdown" href="./sobre_nos.html">Sobre nós</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="./atuacao.html" >Atuação</a></li>
+                  <li class="li_dropdown"><a class="a_dropdown" href="#" >Transparência</a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                <a class="a_menu" id="link_dropdown2" href="#" style="display: flex; align-items: center;">Projetos<i id="icone_dropdown2" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+                <ul class="ul_dropdown2 hidden">
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Projeto de Capoeira</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Projeto de Ballet</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Projeto de Skate</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Projeto de Manicure</a></li>
+                  <li class="li_dropdown2"><a class="a_dropdown2" href="#">Projeto de Barbearia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="a_menu" href="#">Como ajudar?</a>
+            </li>
+            <li><a class="a_menu" href="#">DOAR</a></li>
+            
+            <li class="li">
+              <a class="a_menu" id="link_dropdown2" href="#" style="display: flex; align-items: center;">PT<i id="icone_dropdown2" style="margin-left: 8px;" class="bi bi-caret-down-fill"></i> </a>
+              <ul class="ul_dropdown2 hidden">
+                <li class="li_dropdown2"><a class="a_dropdown2" href="#">Português</a></li>
+              </ul>
+          </li>
+        </ul>
+    </nav>
+    <button id="btn_mobile">
+      <i class="bi bi-list" style="font-size: 28px; color: white;" onclick="changeIcon(this)"></i>
+      <!-- <span id="hamburger" class="hamburger"></span> -->
+  </button>
+  </header>
+   <!----------------------------------------FECHA NAVBAR--------------------------------------->
+
+    <!----------------------------------------MAIN----------------------------------------------->
+    <main id="main_projeto">
+      <h1 class="h1_main_projeto" data-anime="up"> Projeto de Capoeira</h1>
+      <div class="container_main_projeto">
+        <div class="container_texto_main_projeto">
+          <h2 class="h2_main_projeto" data-anime="up">
+          A capoeira combina arte, cultura e movimento, promovendo a auto expressão, o
+          respeito e a cooperação. Além de desenvolver habilidades físicas, como equilíbrio e
+          flexibilidade, proporciona um senso de identidade e pertencimento aos nossos
+          atendidos. Através da capoeira, os praticantes encontram uma forma de expressar
+          sua individualidade e celebrar sua herança cultural.
+          </h2>
+        </div>
+
+        <div class="container_imagem_main_projeto" data-anime="up">
+          <img src="./img/img_main_projeto_capoeira.jpg" alt="">
+         </div>
+      </div>
+      <div class="container_logo_projeto" data-anime="up">
+        <img class="logo_projeto" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+      </div>
+    </main>
+
+  
+
+     <!--------------------------------------FECHA MAAINN------------------------------------------->
+     
+
+  <!--------------------------------------FRASE DE EFEITO------------------------------------------>
+    <section id="frase_de_efeito">
+      <h2 class="h2_frase_de_efeito"  data-anime="up">Com amor e excelência, transformamos comunidades vulneráveis em espaços seguros, de desenvolvimento pessoal e profissional.</h2>
+      <a class="btn_frase_de_efeito" href="#"  data-anime="up">DOE AGORA!</a>
+    </section>
+     <!--------------------------------------FECHA FRASE DE EFEITO------------------------------------------>
+     <!------------------------------------------------PARCEIROS------------------------------------------>
+     <section id="parceiros">
+      <h2 class="h2_parceiros"  data-anime="up">PARCERIAS</h2>
+      <div class="container_parceiros">
+        <h3 class="h3_parceiros" data-anime="up">Sua empresa pode ser a ponte para a transformação da vida de milhares de pessoas
+          atendidas pela nossa instituição. Abaixo, conheça quem são os parceiros que estão
+          fazendo a diferença através do seu apoio aos projetos do Instituto Capoeira Social.</h3>
+      </div>
+
+      <div class="container_parceiros_logos" data-anime="up">
+       <img class="logo_parceiros" src="./img/logo1_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo2_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo3_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo4_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo5_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo6_parceiros.png" alt="">
+       <img class="logo_parceiros" src="./img/logo7_parceiros.png" alt="">
+      </div>
+      <div class="container_logo_parceiros">
+        <img class="logo2_parceiros" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+      </div>
+
+    </section>
+    <!--------------------------------------FECHA PARCEIROS-------------------------------------------------->
+
+ <!------------------------------------------------REDES------------------------------------------>
+  <section id="nossas_redes_sociais">
+    <h2 class="h2_nossas_redes_sociais">NOSSAS REDES SOCIAIS</h2>
+    <h3 class="h3_nossas_redes_sociais">@INSTITUTOCAPOIRASOCIAL</h3>
+    <div class="container_redes_links">
+      <a href="#"><img src="./img/insta_icone_nossas_redes-removebg-preview.png" alt=""></a>
+      <a href="#"><img src="./img/face_icone_nossas_redes-removebg-preview.png" alt=""></a>
+      <a href="#"><img class="link" src="./img/linkedin_icone_sem_fundo.avif" alt=""></a>
+      <a href="#"><img src="./img/youtube_icone_nossas_redes-removebg-preview.png" alt=""></a>  
+    </div>
+    <div class="container_texto_nossas_redes_sociais">
+      <h3 class="h3_nossas_redes_sociais">SITE: INSTITUTOCAPOEIRASOCIAL.COM.BR</h3> 
+      <h3 class="h3_nossas_redes_sociais contato_whats">CONTATO/WHATSAPP: (51) 99704-7480</h3>
+      <a class="saiba_mais_nossas_redes" href="#"><h3>CLIQUE AQUI E SAIBA MAIS</h3></a>
+    </div>
+    <div class="container_logo_nossas_redes">
+      <img class="logo_nossas_redes" src="./img/logo_main_sobre-removebg-preview.png" alt="" data-anime="up">
+    </div>
+    
+   
+
+  </section>
+
+
+    <!-------------------------------------------FOOTER-------------------------------------------------->
+    <footer id="footer">
+      <div class="container1_footer"  data-anime="up">
+          <h2 class="h2_footer"><span class="span_footer">#VemSerLuz.</span> Fale com a gente!</h2>
+          <p><i class="bi bi-shop"></i>AQUI VAI O ENDEREÇO</p>
+      </div>
+      <div class="container2_footer"  data-anime="up">
+        <div class="redes_footer"  >
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+          <a class="btn_footer" href="#">Doar!</a>
+        </div>
+        <div class="tel_email_footer" >
+          <p>AQUI VAI O TELEFONE</p>
+          <p>AQUI VAI O EMAIL</p>
+        </div>
+    </div> 
+    </footer>
+    <img class="link_whats" src="/img/link_whatsapp.png" alt="">
+    </body>
+</html>
