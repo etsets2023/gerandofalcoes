@@ -292,7 +292,7 @@ span{
     }
 
     .container_img_certificacoes{
-        display: block;
+        display: none;
         width: 50px;
     }
 
@@ -336,7 +336,7 @@ span{
         padding-bottom: 50px;
     }
  .container_img_vamos_juntos{
-    display: block;
+    display: none;
     
  }
 
