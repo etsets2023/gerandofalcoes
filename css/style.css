@@ -447,11 +447,11 @@ iframe{
 }
 
 .h3_parceiros{
-    width: 100%;
+    width: 80%;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .container_parceiros_logos{
@@ -462,6 +462,7 @@ iframe{
     /* border: 2px solid red; */
     margin: 0 auto;
     gap: 50px;
+    margin-top: 50px;
 }
 
 .container_logo_parceiros{
