@@ -55,22 +55,33 @@ span{
     align-items: center;
 }
 
+.container_img_atuacao{
+    position: absolute;
+    bottom: 0;
+    left: 50%;  
+    bottom: 310px;
+    transform: translate(-50%);
+}
+
 .img_logo_atuacao_main{
     margin-top: 50px;
     align-self: center;
-    width: 400px;
+    width: 250px;
 }
+
 
 #certificacoes{
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
     background-color: #3a5a98;
     padding-top: 100px;
+    justify-content: center;
 }
 
 
 .certificacoes_container{
-    width: 100%;
+    width: 700px;
     display: flex;
     flex-flow: row wrap;
     padding-top: 50px;
@@ -78,7 +89,32 @@ span{
     padding-left: 50px;   
 }
 
+.container1_certificacoes{
+    display: flex;
+    flex-flow: row wrap;
+}
 
+.h2_pegada_forte{
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px dashed white;
+    height: 40px;
+    margin-bottom: 30px; 
+}
+
+
+.container_img_certificacoes{
+    width: 300px;
+}
+
+.container_logo_certificaoes{
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -100px;
+}
 
 .h2_certificacoes{
     font-size: 2.5rem;
@@ -89,15 +125,7 @@ span{
     margin-bottom: 50px;
 }
 
-.h2_pegada_forte{
-    width: 100%;
-    text-align: center;
-    border-bottom: 4px dashed white;
-    height: 40px;
-    margin-top: 80px;
-    margin-bottom: 30px;
-   
-}
+
 
 #impacto_social{
     width: 100%;
@@ -228,9 +256,7 @@ span{
     }
     
     .container_main_atuacao_texto{
-        width: 600px;
-     
-      
+        width: 600px;   
         
     }
 
@@ -239,6 +265,28 @@ span{
         width: 600px;
         align-items: center;
     }
+
+    .container_img_atuacao{
+        position: absolute;
+        bottom: 0;
+        left: 35%;  
+        bottom: 420px;
+        transform: translate(-50%);
+    
+    }
+
+    .container_img_certificacoes{
+        display: none;
+    }
+
+    .h2_pegada_forte{
+        margin-top: 50px;
+    }
+
+    .container_logo_certificaoes{
+        margin-top: 0px;
+    }
+    
     
 }
 
@@ -265,6 +313,23 @@ span{
     
 }
 
+@media (max-width:849px){
+
+    #nosso_impacto{
+        padding-bottom: 50px;
+    }
+ .container_img_vamos_juntos{
+    display: none;
+ }
+
+ .container_vamos_juntos{
+    background-image: url('../img/img_vamos_juntos-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 80px;
+ }
+}
+
 
 
 @media (max-width:749px){
@@ -277,10 +342,135 @@ span{
         bottom: 0;
         left: 50%;  
         bottom: 0;
-        transform: translate(-50%);
-       
+        transform: translate(-50%);   
     }
     
 }
+
+
+
+
+
+@media (max-width:600px){
+    .container_main_atuacao{
+        padding-inline: 20px; 
+       }
+
+       .h1_atuacao{
+        margin: auto;
+       }
+
+    .container_main_atuacao_texto{
+        width: 100%;
+        color: white;
+        padding-right: 0px; 
+    }
+
+    .container1_certificacoes{
+        font-size: 12px;
+    }
+
+    .h2_pegada_forte{  
+        /* background-color: red; */
+        margin-right: 50px;
+    }
+
+    .logo_certificacoes{
+        width: 250px;
+    }
+
+    .logo_impacto_social{
+        width: 250px;
+        /* background-color: rebeccapurple; */
+        margin: 0 auto;
+    }
+
+    .h2_vamos_juntos{
+        font-size: 2rem;
+    }
+
+    .h3_vamos_juntos{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width:400px){
+    .container_main_atuacao{
+        padding-inline: 20px; 
+       }
+
+       .h1_atuacao{
+        font-size: 2rem;
+        text-align: start;
+       }
+
+    .container_main_atuacao_texto{
+        width: 100%;
+        color: white;
+        padding-right: 0px; 
+    }
+
+    .container2_main_atuacao_texto{
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .h2_container2_main_atuacao_texto{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .container_img_atuacao{
+        position: absolute;
+        bottom: 0;
+        left: 50%;  
+        bottom: -100px;
+        transform: translate(-50%);
+    }
+
+    .h2_certificacoes{
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+    }
+
+    .container1_certificacoes{
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .paragrafos_certificacoes{
+        /* background-color: red; */
+        padding-left: 0 !important;
+        width: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;  
+        gap: 10px;
+    }
+
+    .h2_pegada_forte{  
+        /* background-color: red; */
+        margin-right: 0px;
+    }
+
+    .h2_impacto_social{
+        font-size: 1.5rem;
+    }
+
+   
+   }
+    
+
+
 
 
